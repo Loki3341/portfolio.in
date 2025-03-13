@@ -98,7 +98,7 @@ ul{
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../portfolio1/lokesh.jpg);
+    background-image: url('lokesh.jpg');
     background-size: cover;
     background-position:top center;
     z-index: -1;
