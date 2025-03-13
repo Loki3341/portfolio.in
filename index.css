@@ -1,0 +1,339 @@
+body{
+    font-size: 15px;
+    line-height: 2em;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+h2{
+    font-size: 20px !important;
+    line-height: 1.8em !important;
+    font-weight: 700 !important;
+    color: darkolivegreen !important;
+}
+h3{
+    font-size: 18px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+h4{
+    font-size: 16px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+a{
+    color: blue !important;
+    text-decoration: none !important;
+}
+a:hover{
+  
+    color: #000000 !important;
+    font-weight: 700;
+    
+}
+.lead{
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin-bottom: 20px !important;
+    text-align: justify;
+    font-size: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.btn{
+    padding: 10px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    text-transform: uppercase !important;   
+}
+.btn-primary{
+    color: #fff !important;
+    background: rgb(42, 42, 173) !important;
+}
+.columns-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.left-col-block{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left:0 ;
+}
+.right-col-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+@media(max-width: 600px){
+   .left-col-block{
+    width: 100%;
+    position: relative;
+   } 
+   .right-col-block{
+    width: 100%;
+    position: relative;
+   }
+}
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+.header .profile-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../portfolio1/lokesh.jpg);
+    background-size: cover;
+    background-position:top center;
+    z-index: -1;
+}
+.header .profile-image::before{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-30deg,
+    #5951ae 0%,#7258ae 20%,transparent 50%,transparent 100%);
+}
+
+.header .content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% ;
+}
+.header .content h1{
+    font-size: 36px;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+}
+.header .content p{
+    font-size: 20px;
+    color: #fff;
+}
+.header .content .social-icon{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.header .content .social-icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+.header .content .social-icon li a{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid darkred;
+}
+.header .content .social-icon li a:hover{
+    border: solid 1px red;
+}
+.section-wrapper{
+    padding: 50px;
+}
+.section-tittle{
+    margin-bottom: 15px;
+}
+.section-tittle h2{
+    color: #4444;
+}
+.grey-bg{
+    background: #f9f9f9;
+}
+.expertise-item{
+    margin-bottom: 20px;
+}
+.expertise-item h3{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
+/* Default styles for larger screens */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive styles for screens between 1024px and 300px */
+@media (max-width: 1024px) and (min-width: 300px) {
+    .left-col-block, .right-col-block {
+        width: 100%;
+        position: relative;
+    }
+    .columns-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Educational Details and Certificates section */
+    .section-wrapper {
+        padding: 20px;
+    }
+
+    .section-tittle h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .table thead {
+        font-size: 16px;
+    }
+
+    .table td, .table th {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .content h1 {
+        font-size: 28px;
+    }
+    .header .content p {
+        font-size: 18px;
+    }
+    .header .content .social-icon li a {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+    }
+    .section-wrapper {
+        padding: 30px;
+    }
+    .expertise-item h3 {
+        font-size: 16px;
+    }
+
+    /* Educational Details and Certificates section */
+    .section-wrapper {
+        padding: 15px;
+    }
+
+    .section-tittle h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-col-block {
+        width: 100%;
+        position: relative;
+    }
+    .right-col-block {
+        width: 100%;
+        position: relative;
+    }
+    .header .content h1 {
+        font-size: 24px;
+    }
+    .header .content p {
+        font-size: 16px;
+    }
+    .header .content .social-icon li a {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+        line-height: 26px;
+    }
+    .section-wrapper {
+        padding: 20px;
+    }
+    .section-tittle h2 {
+        font-size: 18px;
+    }
+    .expertise-item h3 {
+        font-size: 14px;
+    }
+
+    /* Educational Details and Certificates section */
+    .table th, .table td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .content h1 {
+        font-size: 20px;
+    }
+    .header .content p {
+        font-size: 14px;
+    }
+    .section-wrapper {
+        padding: 15px;
+    }
+    .section-tittle h2 {
+        font-size: 16px;
+    }
+    .expertise-item h3 {
+        font-size: 13px;
+    }
+
+    /* Educational Details and Certificates section */
+    .table th, .table td {
+        font-size: 10px;
+    }
+}
+
+/* Additional styles for screens with max-width 300px */
+@media (max-width: 300px) {
+    .header .content h1 {
+        font-size: 18px;
+    }
+    .header .content p {
+        font-size: 12px;
+    }
+    .section-wrapper {
+        padding: 10px;
+    }
+    .section-tittle h2 {
+        font-size: 14px;
+    }
+    .expertise-item h3 {
+        font-size: 12px;
+    }
+    .header .content .social-icon li a {
+        font-size: 10px;
+        width: 24px;
+        height: 24px;
+        line-height: 22px;
+    }
+
+    /* Educational Details and Certificates section */
+    .table th, .table td {
+        font-size: 8px;
+    }
+}
